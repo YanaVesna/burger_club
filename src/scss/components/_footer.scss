@@ -1,0 +1,12 @@
+@import "../_variables.scss";
+
+.footer {
+  text-align: center;
+  background: linear-gradient(transparent, $black);
+
+  &__links {
+    a {
+      margin: 16px;
+    }
+  }
+}

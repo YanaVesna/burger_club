@@ -1,0 +1,32 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="70" height="70" fill="#1E1E1E"/>
+<g id="Full website">
+<g id="Dark mode -- CheckOut-Area" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="1080" transform="translate(-101 -503)" fill="#151515"/>
+<g id="Address" filter="url(#filter0_b_0_1)">
+<mask id="path-1-inside-1_0_1" fill="white">
+<path d="M46 -7C46 -9.76143 48.2386 -12 51 -12H1030C1032.76 -12 1035 -9.76142 1035 -7V79C1035 81.7614 1032.76 84 1030 84H51C48.2386 84 46 81.7614 46 79V-7Z"/>
+</mask>
+<path d="M46 -7C46 -9.76143 48.2386 -12 51 -12H1030C1032.76 -12 1035 -9.76142 1035 -7V79C1035 81.7614 1032.76 84 1030 84H51C48.2386 84 46 81.7614 46 79V-7Z" fill="white" fill-opacity="0.2"/>
+<path d="M44 -7C44 -10.866 47.134 -14 51 -14H1028C1031.87 -14 1035 -10.866 1035 -7C1035 -8.65685 1032.76 -10 1030 -10H51C49.3431 -10 48 -8.65685 48 -7H44ZM1035 84H46H1035ZM51 84C47.134 84 44 80.866 44 77V-7C44 -10.866 47.134 -14 51 -14V-10C49.3431 -10 48 -8.65685 48 -7V79C48 81.7614 49.3431 84 51 84ZM1035 -12V84V-12Z" fill="white" fill-opacity="0.4" mask="url(#path-1-inside-1_0_1)"/>
+</g>
+<g id="Location">
+<circle id="Ellipse 2" cx="35" cy="35" r="35" fill="white"/>
+<g id="&#240;&#159;&#166;&#134; icon &#34;Alternate Map Marker&#34;">
+<path id="Vector" d="M33.2529 56.4187C20.388 37.7684 18 35.8543 18 29C18 19.6111 25.6111 12 35 12C44.3889 12 52 19.6111 52 29C52 35.8543 49.612 37.7684 36.7471 56.4187C35.9029 57.6383 34.0971 57.6382 33.2529 56.4187ZM35 36.0833C38.912 36.0833 42.0833 32.912 42.0833 29C42.0833 25.088 38.912 21.9167 35 21.9167C31.088 21.9167 27.9167 25.088 27.9167 29C27.9167 32.912 31.088 36.0833 35 36.0833Z" fill="#FF5B00"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_0_1" x="44" y="-14" width="993" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="1080" fill="white" transform="translate(-101 -503)"/>
+</clipPath>
+</defs>
+</svg>

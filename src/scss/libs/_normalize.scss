@@ -1,0 +1,95 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+@mixin title-text($titleSize) {
+  font-size: $titleSize;
+  line-height: 2;
+  color: $white;
+}
+
+@mixin grap-text($grapSize) {
+  font-size: $grapSize;
+  line-height: 2;
+  color: $light-color;
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 128px;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $yellow;
+    border-radius: 80px;
+  }
+}
+
+.section {
+  padding: 48px 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  cursor: pointer;
+  color: $white;
+  border: $border;
+  background: no-repeat;
+  font-size: 27px;
+  padding: 16px 48px;
+
+  &:hover {
+    color: $white;
+    background: $yellow;
+  }
+}
+
+body {
+  background-image: url("https://i.ibb.co/QFrStjm/black-fone.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 48px 9%;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  color: #aaa;
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    font-size: 18px;
+    padding: 12px 32px;
+  }
+}
