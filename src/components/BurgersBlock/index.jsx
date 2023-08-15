@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({ imageURL, title, price }) => {
+const BurgersBlock = ({ imageURL, title, price }) => {
   return (
     <div className="menu__cart" data-aos="fade-up" data-aos-delay="150">
       <img className="menu__img" src={imageURL} alt="burger" />
@@ -112,4 +112,4 @@ const Cart = ({ imageURL, title, price }) => {
   );
 };
 
-export default Cart;
+export default BurgersBlock;

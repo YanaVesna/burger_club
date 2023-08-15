@@ -1,19 +1,16 @@
 import React from "react";
-import Logo from "../components/Logo";
+import LogoGo from "../components/LogoGo";
 import foto24 from "../assets/img/24-hours-phone-service.png";
 import fastfood from "../assets/img/burger.png";
 import delivery from "../assets/img/delivery-van.png";
-import cartBurgerDark from "../assets/img/dark-burger.png";
-import cook1 from "../assets/img/Ellipse 36.png";
-import cook2 from "../assets/img/Ellipse 37.png";
-import cook3 from "../assets/img/Ellipse 53.png";
 import burger1 from "../assets/img/b4.png";
 import Slider from "../components/Slider";
-import Cart from "../components/Cart";
+import Cart from "../components/BurgersBlock";
 import Drinks from "../components/Drinks";
 import Scrollable from "../Scrollable";
 import burgers from "../assets/burgers.json";
 import drinks from "../assets/drinks.json";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,7 +20,12 @@ const Home = () => {
       </section>
 
       <section className="service">
-        <div className="service__card" data-aos="fade-up" data-aos-delay="150">
+        <div
+          className="service__card"
+          id="service"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           <div className="service__box">
             <img src={fastfood} alt="quality" />
           </div>
@@ -55,9 +57,11 @@ const Home = () => {
         </div>
       </section>
       <section className="menu" id="menu">
-        <div className="menu__heading">
-          <Logo />
-          <h3>OUR MENU</h3>
+        <div className="heading">
+          <LogoGo />
+          <Link to="/menu" href="##" className="btn">
+            go to menu
+          </Link>
         </div>
 
         <div className="menu__box">
@@ -66,9 +70,9 @@ const Home = () => {
           })}
         </div>
       </section>
-      <section className="drinks">
-        <div className="drinks__heading">
-          <Logo />
+      <section className="drinks" id="drinks">
+        <div className="heading">
+          <LogoGo />
           <h3>Drinks</h3>
         </div>
         <div className="drinks__box">
@@ -88,395 +92,81 @@ const Home = () => {
         </div>
       </section>
       <section className="about" id="about">
-        <div
-          className="about__image"
-          data-aos="fade-right"
-          data-aos-delay="150"
-        >
-          <img src={cartBurgerDark} alt="about us" />
+        <div className="heading">
+          <LogoGo />
+          <Link to="/about" href="#" className="btn">
+            ABOUT US
+          </Link>
         </div>
-        <div
-          className="about__content"
-          data-aos="fade-left"
-          data-aos-delay="300"
-        >
-          <h3 className="about__title">Step into burger heaven</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ut
-            quam mollitia quisquam sapiente numquam laborum id alias, dolor,
-            assumenda, quis sit doloribus optio similique! Vel, inventore
-            corrupti! Quasi, quia!
-          </p>
-          <div className="about__icons">
-            <h3>
-              <span>&#10003;</span> best price
-            </h3>
-            <h3>
-              <span>&#10003;</span> best service
-            </h3>
-            <h3>
-              <span>&#10003;</span> Fresh Ingredient
-            </h3>
-            <h3>
-              <span>&#10003;</span> backed buns
-            </h3>
-            <h3>
-              <span>&#10003;</span> natural cheese
-            </h3>
-            <h3>
-              <span>&#10003;</span> veg & non-veg
-            </h3>
-          </div>
-          <a href="#a" className="btn">
-            read more
-          </a>
-        </div>
-      </section>
-      <section className="reviews" id="reviews">
-        <div className="reviews__heading">
-          <Logo />
-          <h3>TESTIMONIAL</h3>
-        </div>
-
-        <div className="reviews__box">
+        <div className="about__box">
           <div
-            className="reviews__cart"
-            data-aos="fade-up"
+            className="about__image"
+            data-aos="fade-right"
             data-aos-delay="150"
           >
-            <img className="reviews__img" src={cook1} alt="cook" />
-            <h3>GINA GERSHE</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-              consequuntur dicta in delectus, voluptates doloremque cum .
-            </p>
-
-            <div className="reviews__stars">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3950)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#e0dcbb"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3950">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+            <div
+              className="about__image1"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
+              <img src="/img/about1.jpg" alt="about us" />
+              <span className="about__space"></span>
+              <img src="/img/about2.jpg" alt="about us" />
+            </div>
+            <img
+              className="about__image3"
+              src="/img/about3.jpg"
+              alt="about us"
+            />
+            <div
+              className="about__image2"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
+              <img src="/img/about4.jpg" alt="about us" />
+              <span className="about__space"></span>
+              <img src="/img/about5.jpg" alt="about us" />
             </div>
           </div>
           <div
-            className="reviews__cart"
-            data-aos="fade-up"
+            className="about__content"
+            data-aos="fade-left"
             data-aos-delay="300"
           >
-            <img className="reviews__img" src={cook3} alt="cook" />
-
-            <h3>LIANNA CLEOT</h3>
+            <h3 className="about__title">Step into burger heaven</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-              consequuntur dicta in delectus, voluptates doloremque cum .
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ut
+              quam mollitia quisquam sapiente numquam laborum id alias, dolor,
+              assumenda, quis sit doloribus optio similique! Vel, inventore
+              corrupti! Quasi, quia!
             </p>
-
-            <div className="reviews__stars">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3950)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#e0dcbb"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3950">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-          <div
-            className="reviews__cart"
-            data-aos="fade-up"
-            data-aos-delay="450"
-          >
-            <img className="reviews__img" src={cook2} alt="cook" />
-
-            <h3>JOAHNNA DEO</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-              consequuntur dicta in delectus, voluptates doloremque cum .
-            </p>
-
-            <div className="reviews__stars">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3949)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#FFC700"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3949">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <g clipPath="url(#clip0_526_3950)">
-                  <path
-                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                    fill="#e0dcbb"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_526_3950">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+            <div className="about__icons">
+              <h3>
+                <span>&#10003;</span> best price
+              </h3>
+              <h3>
+                <span>&#10003;</span> best service
+              </h3>
+              <h3>
+                <span>&#10003;</span> Fresh Ingredient
+              </h3>
+              <h3>
+                <span>&#10003;</span> backed buns
+              </h3>
+              <h3>
+                <span>&#10003;</span> natural cheese
+              </h3>
+              <h3>
+                <span>&#10003;</span> veg & non-veg
+              </h3>
             </div>
           </div>
         </div>
       </section>
-      <section className="contact" id="contact">
-        <div className="contact__heading">
-          <Logo />
 
+      <section className="contact" id="contact">
+        <div className="heading">
+          <LogoGo />
           <h3>CONTACT US</h3>
         </div>
         <div className="contact__row">
@@ -639,8 +329,8 @@ const Home = () => {
         </div>
       </section>
       <section className="blogs" id="blogs">
-        <div className="blogs__heading">
-          <Logo />
+        <div className="heading">
+          <LogoGo />
           <h3>daily posts</h3>
         </div>
 

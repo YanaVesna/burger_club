@@ -13,7 +13,7 @@
 @mixin title-text($titleSize) {
   font-size: $titleSize;
   line-height: 2;
-  color: $white;
+  color: $black;
 }
 
 @mixin grap-text($grapSize) {
@@ -56,23 +56,33 @@ html {
   display: inline-block;
   margin-top: 16px;
   cursor: pointer;
-  color: $white;
-  border: $border;
+  color: $yellow;
+  border: 3px solid $yellow;
   background: no-repeat;
   font-size: 27px;
   padding: 16px 48px;
+  font-weight: 500;
 
   &:hover {
     color: $white;
     background: $yellow;
+    border: 1px solid $white;
   }
 }
 
 body {
-  background-image: url("https://i.ibb.co/QFrStjm/black-fone.jpg");
   background-attachment: fixed;
   background-position: center;
   overflow: hidden;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+
+  svg {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -91,5 +101,24 @@ p {
   .btn {
     font-size: 18px;
     padding: 12px 32px;
+  }
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 150px;
+    height: 100px;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: 2;
+    color: $black;
+    margin-top: 10px;
   }
 }

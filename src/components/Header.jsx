@@ -7,6 +7,7 @@ function Header() {
 
   const onClickSearch = () => {
     setValue("active");
+    setMenuValue("");
   };
 
   const onClickClose = () => {
@@ -15,10 +16,11 @@ function Header() {
 
   const onClickMenu = () => {
     setMenuValue("active");
+    setValue("");
   };
 
   const onClickMenuClose = () => {
-    setMenuValue("stop");
+    setMenuValue("");
   };
 
   return (
@@ -140,13 +142,15 @@ function Header() {
       </svg>
 
       <div className={menuValue === "active" ? "navbar__active" : "navbar"}>
-        <a href="../pages/Home.jsx#home">home</a>
+        <a href="../pages/Home.jsx#home">Home</a>
         <a href="../pages/Home.jsx#menu">Menu</a>
+        <a href="../pages/Home.jsx#drinks">Drinks</a>
         <a href="../pages/Home.jsx#about">About</a>
         <span className="space"></span>
         <a href="../pages/Home.jsx#reviews">Reviews</a>
         <a href="../pages/Home.jsx#contact">Contact</a>
         <a href="../pages/Home.jsx#blogs">Blogs</a>
+        <a href="../pages/Home.jsx#service">Service</a>
       </div>
       <a href="../pages/Home.jsx#home" className="logo">
         <Logo />

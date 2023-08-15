@@ -47,12 +47,13 @@
   h3 {
     font-size: 25px;
     line-height: 1;
-    color: #fff;
-    font-weight: 200;
+    color: $white;
+    font-weight: 300;
   }
 
   h1 {
-    @include title-text(55px);
+    font-size: 55px;
+    color: $white;
   }
 
   p {
@@ -105,20 +106,6 @@
   flex-direction: column;
   align-items: center;
   padding: 20px auto;
-
-  &__heading {
-    text-align: center;
-
-    svg {
-      width: 150px;
-      height: 100px;
-    }
-
-    h3 {
-      @include title-text(48px);
-      margin-top: 10px;
-    }
-  }
 
   &__box {
     width: 90%;
@@ -208,20 +195,6 @@
     }
   }
 
-  &__heading {
-    text-align: center;
-
-    svg {
-      width: 150px;
-      height: 100px;
-    }
-
-    h3 {
-      @include title-text(48px);
-      margin-top: 10px;
-    }
-  }
-
   &__content {
     display: flex;
     padding: 20px 0px;
@@ -258,16 +231,52 @@
 .about {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 48px;
+  flex-direction: column;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__image {
     flex: 1 1 640px;
     display: flex;
     justify-content: center;
+    height: 100%;
+    padding: 0 20px;
 
     img {
       width: 55%;
+    }
+  }
+  &__image1 {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__image3 {
+    margin: 0 20px;
+  }
+
+  &__space {
+    height: 20px;
+  }
+
+  &__image2 {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+
+    img {
+      width: 100%;
     }
   }
 
@@ -306,85 +315,11 @@
   }
 }
 
-.reviews {
-  padding: 40px 0;
-
-  &__heading {
-    text-align: center;
-
-    svg {
-      width: 150px;
-      height: 100px;
-    }
-
-    h3 {
-      @include title-text(48px);
-      margin-top: 10px;
-    }
-  }
-
-  &__box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    img {
-      height: 65px;
-      width: 65px;
-      margin-bottom: 16px;
-    }
-
-    h3 {
-      @include title-text(24px);
-    }
-
-    p {
-      @include grap-text(18px);
-      padding: 16px 0;
-    }
-  }
-
-  &__cart {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 400px;
-    margin: 40px;
-  }
-
-  &__stars {
-    svg {
-      path {
-        fill: $yellow;
-      }
-    }
-  }
-}
-
 .contact {
   &__row {
     display: flex;
     flex-wrap: wrap;
     gap: 48px;
-  }
-
-  &__heading {
-    text-align: center;
-    margin-bottom: 50px;
-
-    svg {
-      width: 150px;
-      height: 100px;
-    }
-
-    h3 {
-      font-size: 48px;
-      line-height: 2;
-      color: #fff;
-      margin-top: 10px;
-    }
   }
 
   &__map {
@@ -539,23 +474,6 @@
     }
   }
 
-  &__heading {
-    text-align: center;
-    margin-bottom: 50px;
-
-    svg {
-      width: 150px;
-      height: 100px;
-    }
-
-    h3 {
-      font-size: 48px;
-      line-height: 2;
-      color: #fff;
-      margin-top: 10px;
-    }
-  }
-
   &__content {
     display: flex;
     margin-top: 25px;
@@ -569,6 +487,39 @@
     p {
       @include title-text(18px);
       color: $light-color;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .home {
+    &__content {
+      width: 100%;
+    }
+  }
+
+  .about {
+    &__icons {
+      h3 {
+        line-height: 1;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    h3 {
+      @include title-text(25px);
+    }
+
+    h1 {
+      @include title-text(32px);
+    }
+
+    p {
+      @include grap-text(18px);
     }
   }
 }
@@ -598,39 +549,10 @@
   }
 
   .about {
-    &__image {
-      img {
-        width: 100%;
-      }
-    }
     &__icons {
       h3 {
         font-size: 18px;
       }
-    }
-  }
-}
-
-@media (max-width: 740px) {
-  .home {
-    &__content {
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .home {
-    h3 {
-      @include title-text(25px);
-    }
-
-    h1 {
-      @include title-text(32px);
-    }
-
-    p {
-      @include grap-text(18px);
     }
   }
 }

@@ -1,0 +1,231 @@
+[
+  {
+    "id": 0,
+    "imageURL": "https://ibb.co/RT84006",
+    "title": "The original OG Crispy Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [6.99, 8.99, 10.99],
+    "category": 0,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Grilled onion",
+      "Thousand island",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 1,
+    "imageURL": "https://ibb.co/cwc5CLD",
+    "title": "The American Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [5.99, 7.89, 9.69],
+    "category": 1,
+    "rating": 4,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Lettuce, tomato, pickle, onion",
+      "Ketchup & mustard",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 2,
+    "imageURL": "https://ibb.co/T8NsqNV",
+    "title": "The Cowboy Crispy Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [7.49, 9.59, 11.99],
+    "category": 2,
+    "rating": 4.5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Bacon",
+      "Jalapeno",
+      "Mayo & BBQ",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 3,
+    "imageURL": "https://ibb.co/RT84006",
+    "title": "The impossible Crispy Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [6.99, 8.99, 10.99],
+    "category": 3,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Grilled onion",
+      "Thousand island",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 4,
+    "imageURL": "https://ibb.co/cwc5CLD",
+    "title": "Crispy chicken sandwich",
+    "sizes": ["single", "double", "triple"],
+    "price": [7.19, 9.99, 11.89],
+    "category": 3,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "Crispy breaded white meat chicken",
+      "Lettuce",
+      "Tomato",
+      "Pickle",
+      "Mayo, BBQ or Buffalo",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 5,
+    "imageURL": "https://ibb.co/T8NsqNV",
+    "title": "Crispy's famous burger bowl",
+    "sizes": ["single", "double", "triple"],
+    "price": [11.19, 12.29, 14.89],
+    "category": 3,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Lettuce",
+      "Tomato",
+      "Pickle",
+      "Thousand island",
+      "Pickles, pickled onion",
+      "Yellow peppers"
+    ],
+    "project": 3
+  },
+  {
+    "id": 6,
+    "imageURL": "https://ibb.co/RT84006",
+    "title": "The original BG2 Crispy Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [5.59, 6.99, 7.89],
+    "category": 0,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Grilled onion",
+      "Thousand island",
+      "Brioche bun",
+      "Yellow peppers"
+    ],
+    "project": 3
+  },
+  {
+    "id": 7,
+    "imageURL": "https://ibb.co/cwc5CLD",
+    "title": "The American Dream Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [6.99, 8.89, 10.69],
+    "category": 1,
+    "rating": 4,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Lettuce, tomato, pickle, onion",
+      "Jalapeno",
+      "Mayo & BBQ",
+      "Ketchup & mustard",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 8,
+    "imageURL": "https://ibb.co/T8NsqNV",
+    "title": "The Cowboy-2 Crispy Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [7.69, 9.79, 12.59],
+    "category": 2,
+    "rating": 4.5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Jalapeno",
+      "Mayo & BBQ",
+      "Thousand island",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 9,
+    "imageURL": "https://ibb.co/RT84006",
+    "title": "The impossible Crispy Burger",
+    "sizes": ["single", "double", "triple"],
+    "price": [7.99, 10.19, 13.39],
+    "category": 3,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Grilled onion",
+      "Thousand island",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 10,
+    "imageURL": "https://ibb.co/cwc5CLD",
+    "title": "Crispy chicken sandwich",
+    "sizes": ["single", "double", "triple"],
+    "price": [7.79, 9.99, 12.19],
+    "category": 3,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "Crispy breaded white meat chicken",
+      "Lettuce",
+      "Tomato",
+      "Pickle",
+      "Mayo, BBQ or Buffalo",
+      "Brioche bun"
+    ],
+    "project": 3
+  },
+  {
+    "id": 11,
+    "imageURL": "https://ibb.co/T8NsqNV",
+    "title": "Crispy's famous burger bowl",
+    "sizes": ["single", "double", "triple"],
+    "price": [14.0, 15.0, 16.29],
+    "category": 3,
+    "rating": 5,
+    "burger add-ons": ["extra patty", "bacon", "egg", "pastrami", "avocado"],
+    "description": [
+      "100% certified angus beef",
+      "American cheese",
+      "Lettuce",
+      "Tomato",
+      "Pickle",
+      "Thousand island",
+      "Pickles, pickled onion",
+      "Yellow peppers"
+    ],
+    "project": 3
+  }
+]
