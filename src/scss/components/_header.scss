@@ -110,6 +110,23 @@
       }
     }
   }
+
+  &__wagen {
+    display: flex;
+  }
+
+  &__count {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1650px) {

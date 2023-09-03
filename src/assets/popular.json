@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "imageURL": "/img/popular1.jpg",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 1,
+    "imageURL": "/img/popular2.jpg",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 2,
+    "imageURL": "/img/popular3.jpg",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 3,
+    "imageURL": "/img/popular4.jpg",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 4,
+    "imageURL": "/img/popular5.png",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 5,
+    "imageURL": "/img/popular6.png",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 6,
+    "imageURL": "/img/popular7.png",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 7,
+    "imageURL": "/img/popular4.jpg",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 8,
+    "imageURL": "/img/popular5.png",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 9,
+    "imageURL": "/img/popular6.png",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  },
+  {
+    "id": 10,
+    "imageURL": "/img/popular7.png",
+    "title": "Chicken Manjoori",
+    "price": [15],
+    "description": "Lorem Ipsum is that it has a more-or-less normal"
+  }
+]

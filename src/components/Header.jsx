@@ -1,9 +1,12 @@
 import React from "react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
+import { TotalCountWagenContext } from "../App";
 
 function Header() {
   const [value, setValue] = React.useState("");
   const [menuValue, setMenuValue] = React.useState("");
+  const { totalCountWagen } = React.useContext(TotalCountWagenContext);
 
   const onClickSearch = () => {
     setValue("active");
@@ -142,35 +145,52 @@ function Header() {
       </svg>
 
       <div className={menuValue === "active" ? "navbar__active" : "navbar"}>
-        <a href="../pages/Home.jsx#home">Home</a>
-        <a href="../pages/Home.jsx#menu">Menu</a>
-        <a href="../pages/Home.jsx#drinks">Drinks</a>
-        <a href="../pages/Home.jsx#about">About</a>
+        <a href="../pages/Home.jsx#home" onClick={onClickMenuClose}>
+          Home
+        </a>
+        <a href="../pages/Home.jsx#menu" onClick={onClickMenuClose}>
+          Menu
+        </a>
+        <a href="../pages/Home.jsx#drinks" onClick={onClickMenuClose}>
+          Drinks
+        </a>
+        <a href="../pages/Home.jsx#about" onClick={onClickMenuClose}>
+          About
+        </a>
         <span className="space"></span>
-        <a href="../pages/Home.jsx#reviews">Reviews</a>
-        <a href="../pages/Home.jsx#contact">Contact</a>
-        <a href="../pages/Home.jsx#blogs">Blogs</a>
-        <a href="../pages/Home.jsx#service">Service</a>
+        <a href="../pages/Home.jsx#reviews" onClick={onClickMenuClose}>
+          Reviews
+        </a>
+        <a href="../pages/Home.jsx#contact" onClick={onClickMenuClose}>
+          Contact
+        </a>
+        <a href="../pages/Home.jsx#blogs" onClick={onClickMenuClose}>
+          Blogs
+        </a>
+        <a href="../pages/Home.jsx#service" onClick={onClickMenuClose}>
+          Service
+        </a>
       </div>
       <a href="../pages/Home.jsx#home" className="logo">
         <Logo />
       </a>
-      <svg
-        className="icons"
-        width="30"
-        height="25"
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        viewBox="0 0 512 512"
-        fill="white"
-      >
-        <g>
-          <path
-            strokeWidth="20"
-            d="M-0.5,17.56c0-9.43,7.64-17.07,17.07-17.07h51.2c7.83,0,14.66,5.34,16.56,12.94l13.82,55.33h396.3
+      <Link to="/cartWagen" className="header__wagen">
+        <svg
+          className="icons"
+          width="30"
+          height="25"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 512 512"
+          fill="white"
+        >
+          <g>
+            <path
+              strokeWidth="20"
+              d="M-0.5,17.56c0-9.43,7.64-17.07,17.07-17.07h51.2c7.83,0,14.66,5.34,16.56,12.94l13.82,55.33h396.3
 		c9.43,0.01,17.06,7.66,17.05,17.08l-0.29,3.12l-51.2,273.08c-1.51,8.07-8.55,13.92-16.76,13.93H136.04
 		c-8.21-0.01-15.25-5.86-16.76-13.93L68.11,89.48L54.46,34.63H16.57C7.14,34.63-0.5,26.99-0.5,17.56z M105.38,102.9l44.82,238.94
 		h278.88L473.9,102.9H105.38z M170.17,375.97c-37.7,0-68.27,30.56-68.27,68.27s30.56,68.27,68.27,68.27s68.27-30.57,68.27-68.27
@@ -178,9 +198,11 @@ function Header() {
 		S446.82,375.97,409.11,375.97z M170.17,410.1c18.85,0,34.13,15.28,34.13,34.13c0,18.85-15.28,34.13-34.13,34.13
 		s-34.13-15.28-34.13-34.13C136.04,425.39,151.32,410.1,170.17,410.1z M409.11,410.1c18.85,0,34.13,15.28,34.13,34.13
 		c0,18.85-15.28,34.13-34.13,34.13c-18.85,0-34.13-15.28-34.13-34.13C374.98,425.39,390.26,410.1,409.11,410.1z"
-          />
-        </g>
-      </svg>
+            />
+          </g>
+        </svg>
+        <div className="header__count">{totalCountWagen}</div>
+      </Link>
 
       <form
         className={value === "active" ? "search-form__active" : "search-form"}

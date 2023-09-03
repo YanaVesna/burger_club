@@ -1,0 +1,189 @@
+@import "../_variables.scss";
+
+.shopsingle {
+  height: auto;
+  width: 80%;
+  margin: 150px auto;
+  gap: 40px;
+
+  &__uppart {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    width: 100%;
+    margin-top: 20px;
+
+    img {
+      max-width: 50%;
+      max-height: 400px;
+    }
+  }
+
+  &__count {
+    display: flex;
+    height: 68px;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .btnCard {
+    display: flex;
+    cursor: pointer;
+    color: $yellow;
+    border: 3px solid $yellow;
+    background: no-repeat;
+    font-size: 12px;
+    padding: 16px auto;
+    font-weight: 500;
+    height: 50px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: $white;
+      background: $yellow;
+      border: 1px solid $white;
+    }
+  }
+
+  &__number {
+    width: 75px;
+    height: 50px;
+    display: flex;
+    border: 1px solid $yellow;
+  }
+
+  &__addleft {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__addright {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 10px;
+
+    span {
+      color: $yellow;
+    }
+
+    h1 {
+      @include title-text(36px);
+    }
+    h2 {
+      @include title-text(27px);
+    }
+    p {
+      @include title-text(12px);
+    }
+  }
+
+  &__linie {
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 2px solid $black;
+  }
+
+  &__social-svg-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__downpart {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      @include title-text(24px);
+    }
+
+    p {
+      @include title-text(12px);
+    }
+  }
+
+  &__social-svg {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1000px) {
+  .shopsingle {
+    &__uppart {
+      img {
+        max-width: 380px;
+        max-height: 380px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .shopsingle {
+    &__number {
+      a {
+        width: 150px;
+      }
+    }
+    &__uppart {
+      img {
+        max-width: 250px;
+        max-height: 250px;
+      }
+    }
+
+    &__content {
+      h1 {
+        line-height: 01;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .shopsingle {
+    &__uppart {
+      flex-direction: column;
+    }
+
+    &__content {
+      padding-top: 40px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .shopsingle {
+    &__number {
+      width: 70px;
+      height: 50px;
+    }
+    .btnCard {
+      height: 50px;
+    }
+  }
+}

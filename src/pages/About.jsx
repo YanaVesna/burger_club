@@ -1,8 +1,10 @@
 import React from "react";
 import Scrollable from "../Scrollable";
 import Social from "../components/Social";
+import { Link } from "react-router-dom";
+import GoBack from "../components/GoBack";
 
-const aboutpage = () => {
+const About = () => {
   const comments = [
     {
       foto: "/img/comments1.jpg",
@@ -44,6 +46,9 @@ const aboutpage = () => {
 
   return (
     <div className="aboutpage">
+      <div className="aboutpage__goback">
+        <GoBack />
+      </div>
       <div className="aboutpage__welcome">
         <div className="aboutpage__welcome-content">
           <h1>Welcome to Restaurantate</h1>
@@ -51,9 +56,9 @@ const aboutpage = () => {
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy .
           </p>
-          <a href="##" className="btn">
+          <Link to="/menu" href="##" className="btn">
             view menu
-          </a>
+          </Link>
         </div>
         <div className="aboutpage__welcome-img">
           <img
@@ -190,4 +195,4 @@ const aboutpage = () => {
   );
 };
 
-export default aboutpage;
+export default About;

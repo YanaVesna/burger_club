@@ -9,8 +9,8 @@ const Pagination = ({ onChangePage }) => {
       breakLabel="..."
       nextLabel=">"
       onPageChange={(event) => onChangePage(event.selected + 1)}
-      pageRangeDisplayed={12} //пицц на странице
-      pageCount={3} //количество страниц
+      pageRangeDisplayed={4} //пицц на странице
+      pageCount={10} //количество страниц
       previousLabel="< "
       renderOnZeroPageCount={null}
     />

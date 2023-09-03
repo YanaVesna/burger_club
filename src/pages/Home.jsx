@@ -3,16 +3,16 @@ import LogoGo from "../components/LogoGo";
 import foto24 from "../assets/img/24-hours-phone-service.png";
 import fastfood from "../assets/img/burger.png";
 import delivery from "../assets/img/delivery-van.png";
-import burger1 from "../assets/img/b4.png";
 import Slider from "../components/Slider";
-import Cart from "../components/BurgersBlock";
 import Drinks from "../components/Drinks";
 import Scrollable from "../Scrollable";
-import burgers from "../assets/burgers.json";
 import drinks from "../assets/drinks.json";
 import { Link } from "react-router-dom";
+import { CategoryContext } from "../App";
 
 const Home = () => {
+  const { categoryValue, setCategoryValue } = React.useContext(CategoryContext);
+
   return (
     <>
       <section className="home" id="home">
@@ -59,15 +59,138 @@ const Home = () => {
       <section className="menu" id="menu">
         <div className="heading">
           <LogoGo />
-          <Link to="/menu" href="##" className="btn">
+          <Link
+            to="/menu"
+            href="##"
+            onClick={() => setCategoryValue("All menu")}
+            className="btn"
+          >
             go to menu
           </Link>
         </div>
-
-        <div className="menu__box">
-          {burgers.map((obj) => {
-            return <Cart key={obj.id} {...obj} />;
-          })}
+        <div className="menu__main">
+          <div className="menu__part" data-aos="fade-up" data-aos-delay="150">
+            <Link
+              to="/menu"
+              onMouseMove={() => setCategoryValue("Italian pasta")}
+              className="menu__block1"
+            >
+              <div className="menu__imga">
+                <img src="/img/italian.png" alt="italian pasta" />
+              </div>
+              <div
+                className={
+                  categoryValue === "Italian pasta"
+                    ? "menu__content1 active"
+                    : "menu__content1"
+                }
+              >
+                <h2>Italian pasta</h2>
+                <p>menu</p>
+              </div>
+            </Link>
+            <div className="menu__block2">
+              <Link
+                to="/menu"
+                onMouseMove={() => setCategoryValue("Burgers")}
+                className="menu__block2-1"
+              >
+                <div className="menu__imga">
+                  <img src="/img/pizza.jpg" alt="burgers-menu" />
+                </div>
+                <div
+                  className={
+                    categoryValue === "Burgers"
+                      ? "menu__content1 active"
+                      : "menu__content1"
+                  }
+                >
+                  <h2>Burger's</h2>
+                  <p>menu</p>
+                </div>
+              </Link>
+              <Link
+                to="/menu"
+                onMouseMove={() => setCategoryValue("Best recipes")}
+                className="menu__block2-2"
+              >
+                <div className="menu__imga">
+                  <img src="/img/rise.jpg" alt="best recipes-menu" />
+                </div>
+                <div
+                  className={
+                    categoryValue === "Best recipes"
+                      ? "menu__content1 active"
+                      : "menu__content1"
+                  }
+                >
+                  <h2>Best recipes</h2>
+                  <p>menu</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="menu__part" data-aos="fade-up" data-aos-delay="150">
+            <div className="menu__block2">
+              <Link
+                to="/menu"
+                onMouseMove={() => setCategoryValue("Desserts")}
+                className="menu__block2-1"
+              >
+                <div className="menu__imga">
+                  <img src="/img/Photo111.jpg" alt="Desserts-menu" />
+                </div>
+                <div
+                  className={
+                    categoryValue === "Desserts"
+                      ? "menu__content1 active"
+                      : "menu__content1"
+                  }
+                >
+                  <h2>Desserts</h2>
+                  <p>menu</p>
+                </div>
+              </Link>
+              <Link
+                to="/menu"
+                onMouseMove={() => setCategoryValue("Special")}
+                className="menu__block2-2"
+              >
+                <div className="menu__imga">
+                  <img src="/img/Photo1111.jpg" alt="special-menu" />
+                </div>
+                <div
+                  className={
+                    categoryValue === "Special"
+                      ? "menu__content1 active"
+                      : "menu__content1"
+                  }
+                >
+                  <h2>Special</h2>
+                  <p>menu</p>
+                </div>
+              </Link>
+            </div>
+            <Link
+              to="/menu"
+              onMouseMove={() => setCategoryValue("Drinks")}
+              className="menu__block1"
+            >
+              <div className="menu__imga">
+                <img src="/img/startes2.png" alt="drinks" />
+              </div>
+              <div
+                className={
+                  categoryValue === "Drinks"
+                    ? "menu__content1 active"
+                    : "menu__content1"
+                }
+              >
+                <h2>Drinks</h2>
+                <p>menu</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="drinks" id="drinks">
@@ -83,6 +206,7 @@ const Home = () => {
                   className="drinks__ittem"
                   data-aos="fade-up"
                   data-aos-delay="150"
+                  key={obj.id}
                 >
                   <Drinks key={obj.id} {...obj} />
                 </div>
@@ -337,7 +461,7 @@ const Home = () => {
         <div className="blogs__boxes">
           <div className="blogs__box" data-aos="fade-up" data-aos-delay="150">
             <div className="blogs__image">
-              <img className="blogs__img" src={burger1} alt="" />
+              <img className="blogs__img" src="/img/blog2.png" alt="" />
               <div className="blogs__icons">
                 <a href="##">
                   <svg
@@ -377,14 +501,14 @@ const Home = () => {
                 impedit, consequatur perspiciatis facilis, aliquid, placeat
                 vero.
               </p>
-              <a href="##" className="btn">
+              <Link to="/payment" href="##" className="btn">
                 read more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="blogs__box" data-aos="fade-up" data-aos-delay="300">
             <div className="blogs__image">
-              <img className="blogs__img" src={burger1} alt="" />
+              <img className="blogs__img" src="/img/blog.png" alt="" />
               <div className="blogs__icons">
                 <a href="##">
                   <svg
@@ -424,14 +548,14 @@ const Home = () => {
                 impedit, consequatur perspiciatis facilis, aliquid, placeat
                 vero.
               </p>
-              <a href="##" className="btn">
+              <Link to="/payment" href="##" className="btn">
                 read more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="blogs__box" data-aos="fade-up" data-aos-delay="450">
             <div className="blogs__image">
-              <img className="blogs__img" src={burger1} alt="" />
+              <img className="blogs__img" src="/img/b4.png" alt="" />
               <div className="blogs__icons">
                 <a href="##">
                   <svg
@@ -471,9 +595,10 @@ const Home = () => {
                 impedit, consequatur perspiciatis facilis, aliquid, placeat
                 vero.
               </p>
-              <a href="##" className="btn">
+
+              <Link to="/payment" href="##" className="btn">
                 read more
-              </a>
+              </Link>
             </div>
           </div>
         </div>

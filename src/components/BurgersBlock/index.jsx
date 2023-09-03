@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BurgersBlock = ({ imageURL, title, price }) => {
   return (
     <div className="menu__cart" data-aos="fade-up" data-aos-delay="150">
       <img className="menu__img" src={imageURL} alt="burger" />
       <div className="menu__content">
-        <div className="menu__stars">
+        {/* <div className="menu__stars">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -101,13 +102,13 @@ const BurgersBlock = ({ imageURL, title, price }) => {
               </clipPath>
             </defs>
           </svg>
-        </div>
+        </div> */}
         <h3>{title}</h3>
         <div className="menu__price">from $ {price[0]}</div>
-        <a href="##" className="btn">
-          learn more
-        </a>
       </div>
+      <Link to="/single" href="##" className="btn">
+        learn more
+      </Link>
     </div>
   );
 };

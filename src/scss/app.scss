@@ -102,61 +102,110 @@
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px auto;
-
-  &__box {
-    width: 90%;
-    height: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    cursor: pointer;
-    flex-wrap: wrap;
-  }
-
-  &__cart {
-    text-align: center;
-    padding: 30px 30px;
-  }
-
-  &__content {
+  &__main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    h3 {
-      @include title-text(24px);
+    width: 70%;
+    margin: 50px auto;
+    gap: 15px;
+  }
+
+  &__part {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  &__block1 {
+    width: 50%;
+  }
+
+  &__block1,
+  &__block2-1,
+  &__block2-2 {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: none;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+    }
+
+    &:hover &:before {
+      display: block;
+    }
+
+    /* &:hover .menu__content1 {
+      top: 0;
+      background: rgba(0, 0, 0, 0.7);
+    } */
+  }
+
+  &__imga {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
-  &__price {
-    @include grap-text(28px);
-  }
-
-  &__img {
-    width: 400px;
-
-    &:hover {
-      transform: translateY(16px);
-    }
-  }
-
-  &__stars {
+  &__content1,
+  &__content1.active {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
+    z-index: 10;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    flex-direction: column;
 
-    svg {
-      margin: 2px;
-      width: 20px;
-      height: 20px;
+    h2 {
+      @include title-text(16px);
+      color: $white;
+      text-transform: uppercase;
+    }
 
-      path {
-        fill: $yellow;
-      }
+    p {
+      color: $yellow;
+    }
+  }
+
+  &__content1 {
+    top: 130%;
+
+    &.active {
+      top: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__block2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__block3 {
+    width: 50%;
+    display: flex;
+    margin-left: 20px;
+    img {
+      width: 100%;
     }
   }
 }
@@ -197,25 +246,55 @@
 
   &__content {
     display: flex;
-    padding: 20px 0px;
+    padding: 10px 0px;
     flex-direction: row;
     transform: translateY(160px);
     background: $black;
     opacity: 0.8;
     justify-content: space-around;
+    align-items: center;
 
     h3 {
       @include title-text(15px);
+      color: $white;
     }
   }
 
   &__price {
-    @include grap-text(15px);
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: red;
+      font-size: 32px;
+    }
+  }
+
+  &__strike {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    opacity: 0.5;
+    color: $white;
+  }
+
+  &__linie {
+    margin-top: 10px;
+    background-color: red;
+    height: 2px;
+    width: 65px;
+    position: absolute;
   }
 
   &__image {
     overflow: hidden;
     position: relative;
+
+    svg {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+    }
   }
 
   &__img {
@@ -385,7 +464,6 @@
     input {
       padding: 20px 25px;
       font-size: 27px;
-      color: $white;
       background: none;
       border: $border;
       text-transform: none;
@@ -445,7 +523,7 @@
   }
 
   &__img {
-    height: 100%;
+    max-height: 430px;
     width: 100%;
     object-fit: cover;
   }
@@ -506,20 +584,32 @@
       }
     }
   }
+
+  .menu__block2,
+  .menu__block1 {
+    width: 100%;
+  }
+
+  .menu__part {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
   .home {
     h3 {
       @include title-text(25px);
+      color: $white;
     }
 
     h1 {
       @include title-text(32px);
+      color: $white;
     }
 
     p {
       @include grap-text(18px);
+      color: $white;
     }
   }
 }
