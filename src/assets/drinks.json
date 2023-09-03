@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "imageURL": "/img/Cola.jpg",
+    "imageURL": "https://i.ibb.co/tLvrySS/Cola.jpg",
     "title": "Pepsi 0.33l",
     "price": 5.0,
     "category": 0,
@@ -9,7 +9,7 @@
   },
   {
     "id": 1,
-    "imageURL": "/img/coctale.jpg",
+    "imageURL": "https://i.ibb.co/d4Ms6rh/coctale.jpg",
     "title": "Fanta 0.33l",
     "price": 6.5,
     "category": 0,
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "imageURL": "/img/lime.jpg",
+    "imageURL": "https://i.ibb.co/qWMMbcB/lime.jpg",
     "title": "Sprite 0.33l",
     "price": 5.25,
     "category": 0,
@@ -26,7 +26,7 @@
   },
   {
     "id": 3,
-    "imageURL": "/img/Cola.jpg",
+    "imageURL": "https://i.ibb.co/tLvrySS/Cola.jpg",
     "title": "Pepsi 0.33l",
     "price": 5.0,
     "category": 0,
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "imageURL": "/img/coctale.jpg",
+    "imageURL": "https://i.ibb.co/d4Ms6rh/coctale.jpg",
     "title": "Fanta 0.33l",
     "price": 6.5,
     "category": 0,
@@ -42,7 +42,7 @@
   },
   {
     "id": 5,
-    "imageURL": "/img/lime.jpg",
+    "imageURL": "https://i.ibb.co/qWMMbcB/lime.jpg",
     "title": "Sprite 0.33l",
     "price": 5.25,
     "category": 0,
@@ -50,7 +50,7 @@
   },
   {
     "id": 6,
-    "imageURL": "/img/lime.jpg",
+    "imageURL": "https://i.ibb.co/qWMMbcB/lime.jpg",
     "title": "Sprite 0.33l",
     "price": 5.25,
     "category": 0,
@@ -59,7 +59,7 @@
   },
   {
     "id": 7,
-    "imageURL": "/img/Cola.jpg",
+    "imageURL": "https://i.ibb.co/tLvrySS/Cola.jpg",
     "title": "Pepsi 0.33l",
     "price": 5.0,
     "category": 0,
@@ -67,7 +67,7 @@
   },
   {
     "id": 8,
-    "imageURL": "/img/coctale.jpg",
+    "imageURL": "https://i.ibb.co/d4Ms6rh/coctale.jpg",
     "title": "Fanta 0.33l",
     "price": 6.5,
     "category": 0,
@@ -75,7 +75,7 @@
   },
   {
     "id": 9,
-    "imageURL": "/img/lime.jpg",
+    "imageURL": "https://i.ibb.co/qWMMbcB/lime.jpg",
     "title": "Sprite 0.33l",
     "price": 5.25,
     "category": 0,

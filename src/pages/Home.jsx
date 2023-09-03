@@ -76,7 +76,10 @@ const Home = () => {
               className="menu__block1"
             >
               <div className="menu__imga">
-                <img src="/img/italian.png" alt="italian pasta" />
+                <img
+                  src="https://i.ibb.co/dG2VLJQ/italian.png"
+                  alt="italian pasta"
+                />
               </div>
               <div
                 className={
@@ -96,7 +99,10 @@ const Home = () => {
                 className="menu__block2-1"
               >
                 <div className="menu__imga">
-                  <img src="/img/pizza.jpg" alt="burgers-menu" />
+                  <img
+                    src="https://i.ibb.co/s2vc0fM/pizza.jpg"
+                    alt="burgers-menu"
+                  />
                 </div>
                 <div
                   className={
@@ -115,7 +121,10 @@ const Home = () => {
                 className="menu__block2-2"
               >
                 <div className="menu__imga">
-                  <img src="/img/rise.jpg" alt="best recipes-menu" />
+                  <img
+                    src="https://i.ibb.co/R0CZ0Vs/rise.jpg"
+                    alt="best recipes-menu"
+                  />
                 </div>
                 <div
                   className={
@@ -138,7 +147,10 @@ const Home = () => {
                 className="menu__block2-1"
               >
                 <div className="menu__imga">
-                  <img src="/img/Photo111.jpg" alt="Desserts-menu" />
+                  <img
+                    src="https://i.ibb.co/zXS9Hdh/Photo111.jpg"
+                    alt="Desserts-menu"
+                  />
                 </div>
                 <div
                   className={
@@ -157,7 +169,10 @@ const Home = () => {
                 className="menu__block2-2"
               >
                 <div className="menu__imga">
-                  <img src="/img/Photo1111.jpg" alt="special-menu" />
+                  <img
+                    src="https://i.ibb.co/dgkcFr9/Photo1111.jpg"
+                    alt="special-menu"
+                  />
                 </div>
                 <div
                   className={
@@ -177,7 +192,7 @@ const Home = () => {
               className="menu__block1"
             >
               <div className="menu__imga">
-                <img src="/img/startes2.png" alt="drinks" />
+                <img src="https://i.ibb.co/RCRmVrG/startes2.png" alt="drinks" />
               </div>
               <div
                 className={
@@ -233,13 +248,13 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-delay="150"
             >
-              <img src="/img/about1.jpg" alt="about us" />
+              <img src="https://i.ibb.co/z2fyKmp/about1.jpg" alt="about us" />
               <span className="about__space"></span>
-              <img src="/img/about2.jpg" alt="about us" />
+              <img src="https://i.ibb.co/dB1CXrn/about2.jpg" alt="about us" />
             </div>
             <img
               className="about__image3"
-              src="/img/about3.jpg"
+              src="https://i.ibb.co/W6LGHvF/about3.jpg"
               alt="about us"
             />
             <div
@@ -247,9 +262,9 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-delay="150"
             >
-              <img src="/img/about4.jpg" alt="about us" />
+              <img src="https://i.ibb.co/HYzHbm2/about4.jpg" alt="about us" />
               <span className="about__space"></span>
-              <img src="/img/about5.jpg" alt="about us" />
+              <img src="https://i.ibb.co/RGF7ywG/about5.jpg" alt="about us" />
             </div>
           </div>
           <div
@@ -461,7 +476,11 @@ const Home = () => {
         <div className="blogs__boxes">
           <div className="blogs__box" data-aos="fade-up" data-aos-delay="150">
             <div className="blogs__image">
-              <img className="blogs__img" src="/img/blog2.png" alt="" />
+              <img
+                className="blogs__img"
+                src="https://i.ibb.co/3sztZkw/blog2.png"
+                alt=""
+              />
               <div className="blogs__icons">
                 <a href="##">
                   <svg
@@ -508,7 +527,11 @@ const Home = () => {
           </div>
           <div className="blogs__box" data-aos="fade-up" data-aos-delay="300">
             <div className="blogs__image">
-              <img className="blogs__img" src="/img/blog.png" alt="" />
+              <img
+                className="blogs__img"
+                src="https://i.ibb.co/bdFtjrW/blog.png"
+                alt=""
+              />
               <div className="blogs__icons">
                 <a href="##">
                   <svg
@@ -555,7 +578,11 @@ const Home = () => {
           </div>
           <div className="blogs__box" data-aos="fade-up" data-aos-delay="450">
             <div className="blogs__image">
-              <img className="blogs__img" src="/img/b4.png" alt="" />
+              <img
+                className="blogs__img"
+                src="https://i.ibb.co/P9T4vJ3/b4.png"
+                alt=""
+              />
               <div className="blogs__icons">
                 <a href="##">
                   <svg
