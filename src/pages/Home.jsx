@@ -59,6 +59,7 @@ const Home = () => {
       <section className="menu" id="menu">
         <div className="heading">
           <LogoGo />
+
           <Link
             to="/menu"
             href="##"

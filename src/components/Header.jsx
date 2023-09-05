@@ -158,7 +158,7 @@ function Header() {
           About
         </a>
         <span className="space"></span>
-        <a href="../pages/Home.jsx#reviews" onClick={onClickMenuClose}>
+        <a href="../pages/Home.jsx#blogs" onClick={onClickMenuClose}>
           Reviews
         </a>
         <a href="../pages/Home.jsx#contact" onClick={onClickMenuClose}>
@@ -171,6 +171,7 @@ function Header() {
           Service
         </a>
       </div>
+
       <a href="../pages/Home.jsx#home" className="logo">
         <Logo />
       </a>

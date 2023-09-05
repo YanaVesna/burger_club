@@ -7,37 +7,37 @@ import GoBack from "../components/GoBack";
 const About = () => {
   const comments = [
     {
-      foto: "/img/comments1.jpg",
+      foto: "https://i.ibb.co/cgYRWyD/comments1.jpg",
       name: "Daniyal Sppra",
       city: "Newyork",
       text: "It is professional, considers everyone's time, can think about the  There are many variations of passages whole probls small niche, friendly.",
     },
     {
-      foto: "/img/comments2.jpg",
+      foto: "https://i.ibb.co/2htJ2Yh/comments2.jpg",
       name: "Natasha D",
       city: "Salt Lake City",
       text: "It is professional, considers everyone's time, can think about the  There are many variations of passages.",
     },
     {
-      foto: "/img/comments3.jpg",
+      foto: "https://i.ibb.co/yFFr9pk/comments3.jpg",
       name: "Jack Sparrow",
       city: "San diego",
       text: "It is professional, considers everyone's time, can think about the  There are many  passages whole probls small niche, friendly.",
     },
     {
-      foto: "/img/comments1.jpg",
+      foto: "https://i.ibb.co/cgYRWyD/comments1.jpg",
       name: "Nikita Tomson",
       city: "Newyork",
       text: "It is professional, considers everyone's time, can think about the  There are many variations of passages whole probls small niche, friendly.",
     },
     {
-      foto: "/img/comments2.jpg",
+      foto: "https://i.ibb.co/2htJ2Yh/comments2.jpg",
       name: "Melen Farmer",
       city: "San francisko",
       text: "It is professional, considers everyone's time, can think about the  There are many variations of passages whole probls small niche, friendly.",
     },
     {
-      foto: "/img/comments3.jpg",
+      foto: "https://i.ibb.co/yFFr9pk/comments3.jpg",
       name: "Daniyal Sppra",
       city: "Newyork",
       text: "It is professional, considers everyone's time, can think about the  There are many variations of passages whole probls small niche, friendly.",
@@ -63,14 +63,14 @@ const About = () => {
         <div className="aboutpage__welcome-img">
           <img
             style={{ position: "relative", top: "60px" }}
-            src="/img/about_vie.jpg"
+            src="https://i.ibb.co/cb1kV8p/about-vie.jpg"
             alt="lamp"
           />
         </div>
       </div>
       <div className="aboutpage__story">
         <div className="aboutpage__story-img">
-          <img src="/img/story.jpg" alt="story" />
+          <img src="https://i.ibb.co/7NmvQj7/story.jpg" alt="story" />
         </div>
         <div className="aboutpage__story-content">
           <div className="aboutpage__story-content1">
@@ -97,7 +97,7 @@ const About = () => {
           </div>
           <div className="aboutpage__story-content3">
             <h1>JOSEFINE</h1>
-            <img src="/img/josefine.png" alt="story" />
+            <img src="https://i.ibb.co/j6jny49/Josefine.png" alt="story" />
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ const About = () => {
       <div className="aboutpage__images">
         <div className="aboutpage__img">
           <div className="aboutpage__image">
-            <img src="/img/shef1.png" alt="chefs" />
+            <img src="https://i.ibb.co/GMRTvBB/shef1.png" alt="chefs" />
             <Social />
           </div>
 
@@ -117,7 +117,7 @@ const About = () => {
         </div>
         <div className="aboutpage__img">
           <div className="aboutpage__image">
-            <img src="/img/shef2.png" alt="chefs" />
+            <img src="https://i.ibb.co/BZHY0tK/shef2.png" alt="chefs" />
             <Social />
           </div>
 
@@ -126,7 +126,7 @@ const About = () => {
         </div>
         <div className="aboutpage__img">
           <div className="aboutpage__image">
-            <img src="/img/shef3.png" alt="chefs" />
+            <img src="https://i.ibb.co/MDtPTSR/shef3.png" alt="chefs" />
             <Social />
           </div>
 
@@ -135,7 +135,7 @@ const About = () => {
         </div>
         <div className="aboutpage__img">
           <div className="aboutpage__image">
-            <img src="/img/shef4.png" alt="chefs" />
+            <img src="https://i.ibb.co/9s4ZR7G/shef4.png" alt="chefs" />
             <Social />
           </div>
 
@@ -144,7 +144,7 @@ const About = () => {
         </div>
         <div className="aboutpage__img">
           <div className="aboutpage__image">
-            <img src="/img/shef5.png" alt="chefs" />
+            <img src="https://i.ibb.co/ZGpHk6J/shef5.png" alt="chefs" />
             <Social />
           </div>
 
@@ -153,7 +153,7 @@ const About = () => {
         </div>
         <div className="aboutpage__img">
           <div className="aboutpage__image">
-            <img src="/img/shef6.png" alt="chefs" />
+            <img src="https://i.ibb.co/qsWbbCK/shef6.png" alt="chefs" />
             <Social />
           </div>
 
@@ -190,7 +190,7 @@ const About = () => {
           })}
         </Scrollable>
       </div>
-      <img src="/img/fonmenu.png" alt="evening" />
+      <img src="https://i.ibb.co/LxSkKKK/fonmenu.png" alt="evening" />
     </div>
   );
 };

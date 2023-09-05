@@ -1,5 +1,6 @@
 import React from "react";
 import "./scss/app.scss";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
@@ -7,10 +8,9 @@ import ShopSingle from "./pages/ShopSingle.jsx";
 import About from "./pages/About.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import CartWagen from "./pages/CartWagen.jsx";
-import Menu from "./pages/Menu.jsx#drinks";
+import Menu from "./pages/Menu.jsx";
+import HomeMenu from "./pages/Home.jsx";
 import Payment from "./pages/Payment.jsx";
-import Drinks from "./pages/Home.jsx#drinks";
-import { Routes, Route } from "react-router-dom";
 
 export const CategoryContext = React.createContext();
 export const SearchContext = React.createContext();
@@ -46,15 +46,15 @@ function App() {
                   >
                     <Header />
                     <Routes>
-                      <Route path="/" element={<Home />} />
-                      <Route path="/*" element={<Home />} />
                       <Route path="/single" element={<ShopSingle />} />
                       <Route path="/cartWagen" element={<CartWagen />} />
                       <Route path="/about" element={<About />} />
                       <Route path="/notfound" element={<NotFound />} />
                       <Route path="/menu" element={<Menu />} />
-                      <Route path="/77" element={<Drinks />} />
+                      <Route path="/HomeMenu/:menu" element={<HomeMenu />} />
                       <Route path="/payment" element={<Payment />} />
+                      <Route path="/" element={<Home />} />
+                      <Route path="/*" element={<Home />} />
                     </Routes>
                     <Footer />
                   </CategoryContext.Provider>
