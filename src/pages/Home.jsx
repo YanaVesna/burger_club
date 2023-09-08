@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import LogoGo from "../components/LogoGo";
 import foto24 from "../assets/img/24-hours-phone-service.png";
 import fastfood from "../assets/img/burger.png";
@@ -8,18 +8,68 @@ import Drinks from "../components/Drinks";
 import Scrollable from "../Scrollable";
 import drinks from "../assets/drinks.json";
 import { Link } from "react-router-dom";
-import { CategoryContext } from "../App";
+import { CategoryContext, LinkContext } from "../App";
 
 const Home = () => {
   const { categoryValue, setCategoryValue } = React.useContext(CategoryContext);
+  const { linkContext } = React.useContext(LinkContext);
+
+  console.log(linkContext);
+
+  const inputElement1 = useRef();
+  const inputElement2 = useRef();
+  const inputElement3 = useRef();
+  const inputElement4 = useRef();
+  const inputElement5 = useRef();
+  const inputElement6 = useRef();
+  const inputElement7 = useRef();
+
+  const scrollToElement = () => {
+    if (linkContext === 1) {
+      inputElement1.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (linkContext === 2) {
+      inputElement2.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (linkContext === 3) {
+      inputElement3.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (linkContext === 4) {
+      console.log(55);
+      inputElement4.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (linkContext === 5) {
+      inputElement5.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (linkContext === 6) {
+      inputElement6.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (linkContext === 7) {
+      inputElement7.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      console.log(111);
+    }
+  };
+
+  useEffect(() => {
+    scrollToElement();
+  }, []);
 
   return (
     <>
-      <section className="home" id="home">
+      <section ref={inputElement1} className="home" id="home">
         <Slider />
       </section>
 
-      <section className="service">
+      <section ref={inputElement6} className="service">
         <div
           className="service__card"
           id="service"
@@ -56,7 +106,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="menu" id="menu">
+      <section ref={inputElement2} className="menu" id="menu">
         <div className="heading">
           <LogoGo />
 
@@ -66,7 +116,7 @@ const Home = () => {
             onClick={() => setCategoryValue("All menu")}
             className="btn"
           >
-            go to menu
+            <div>go to menu</div>
           </Link>
         </div>
         <div className="menu__main">
@@ -209,7 +259,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="drinks" id="drinks">
+      <section ref={inputElement3} className="drinks" id="drinks">
         <div className="heading">
           <LogoGo />
           <h3>Drinks</h3>
@@ -231,7 +281,7 @@ const Home = () => {
           </Scrollable>
         </div>
       </section>
-      <section className="about" id="about">
+      <section ref={inputElement4} className="about" id="about">
         <div className="heading">
           <LogoGo />
           <Link to="/about" href="#" className="btn">
@@ -304,7 +354,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact" id="contact">
+      <section ref={inputElement5} className="contact" id="contact">
         <div className="heading">
           <LogoGo />
           <h3>CONTACT US</h3>
@@ -468,7 +518,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="blogs" id="blogs">
+      <section ref={inputElement7} className="blogs" id="blogs">
         <div className="heading">
           <LogoGo />
           <h3>daily posts</h3>

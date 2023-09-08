@@ -1,12 +1,13 @@
 import React from "react";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
-import { TotalCountWagenContext } from "../App";
+import { TotalCountWagenContext, LinkContext } from "../App";
 
 function Header() {
   const [value, setValue] = React.useState("");
   const [menuValue, setMenuValue] = React.useState("");
   const { totalCountWagen } = React.useContext(TotalCountWagenContext);
+  const { setLinkContext } = React.useContext(LinkContext);
 
   const onClickSearch = () => {
     setValue("active");
@@ -20,6 +21,41 @@ function Header() {
   const onClickMenu = () => {
     setMenuValue("active");
     setValue("");
+  };
+
+  const onClickLink1 = () => {
+    setMenuValue("");
+    setLinkContext(1);
+  };
+
+  const onClickLink2 = () => {
+    setMenuValue("");
+    setLinkContext(2);
+  };
+
+  const onClickLink3 = () => {
+    setMenuValue("");
+    setLinkContext(3);
+  };
+
+  const onClickLink4 = () => {
+    setMenuValue("");
+    setLinkContext(4);
+  };
+
+  const onClickLink5 = () => {
+    setMenuValue("");
+    setLinkContext(5);
+  };
+
+  const onClickLink6 = () => {
+    setMenuValue("");
+    setLinkContext(6);
+  };
+
+  const onClickLink7 = () => {
+    setMenuValue("");
+    setLinkContext(7);
   };
 
   const onClickMenuClose = () => {
@@ -145,36 +181,37 @@ function Header() {
       </svg>
 
       <div className={menuValue === "active" ? "navbar__active" : "navbar"}>
-        <a href="../pages/Home.jsx#home" onClick={onClickMenuClose}>
+        <Link to="/" onClick={onClickLink1}>
           Home
-        </a>
-        <a href="../pages/Home.jsx#menu" onClick={onClickMenuClose}>
+        </Link>
+        <Link to="/" onClick={onClickLink2}>
           Menu
-        </a>
-        <a href="../pages/Home.jsx#drinks" onClick={onClickMenuClose}>
+        </Link>
+
+        <Link to="/" onClick={onClickLink3}>
           Drinks
-        </a>
-        <a href="../pages/Home.jsx#about" onClick={onClickMenuClose}>
+        </Link>
+        <Link to="/" onClick={onClickLink4}>
           About
-        </a>
+        </Link>
         <span className="space"></span>
-        <a href="../pages/Home.jsx#blogs" onClick={onClickMenuClose}>
+        <Link to="/" onClick={onClickMenuClose}>
           Reviews
-        </a>
-        <a href="../pages/Home.jsx#contact" onClick={onClickMenuClose}>
+        </Link>
+        <Link to="/" onClick={onClickLink5}>
           Contact
-        </a>
-        <a href="../pages/Home.jsx#blogs" onClick={onClickMenuClose}>
-          Blogs
-        </a>
-        <a href="../pages/Home.jsx#service" onClick={onClickMenuClose}>
+        </Link>
+        <Link to="/" onClick={onClickLink6}>
           Service
-        </a>
+        </Link>
+        <Link to="/" onClick={onClickLink7}>
+          Blogs
+        </Link>
       </div>
 
-      <a href="../pages/Home.jsx#home" className="logo">
+      <Link to="/" className="logo">
         <Logo />
-      </a>
+      </Link>
       <Link to="/cartWagen" className="header__wagen">
         <svg
           className="icons"
