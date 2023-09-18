@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/burger_club/static/css/main.9426ae68.css",
-    "main.js": "/burger_club/static/js/main.f2b2f835.js",
+    "main.css": "/burger_club/static/css/main.7d7c6a80.css",
+    "main.js": "/burger_club/static/js/main.7b38b6e9.js",
     "static/media/slide2.jpg": "/burger_club/static/media/slide2.a09a793438aaf1625037.jpg",
     "static/media/slide4.png": "/burger_club/static/media/slide4.00ca1af851980562de04.png",
     "static/media/Photo88.jpg": "/burger_club/static/media/Photo88.8236ac5a44382728c7ad.jpg",
+    "static/media/payment-img.png": "/burger_club/static/media/payment-img.12651b99abad73383fd0.png",
     "static/media/slide1.jpg": "/burger_club/static/media/slide1.7eb12e75b0ee2baab6c6.jpg",
     "static/media/burger.png": "/burger_club/static/media/burger.2fb37914ddd9e84f5ae1.png",
     "static/media/24-hours-phone-service.png": "/burger_club/static/media/24-hours-phone-service.8d58bae610a606eeb938.png",
     "index.html": "/burger_club/index.html",
-    "main.9426ae68.css.map": "/burger_club/static/css/main.9426ae68.css.map",
-    "main.f2b2f835.js.map": "/burger_club/static/js/main.f2b2f835.js.map"
+    "main.7d7c6a80.css.map": "/burger_club/static/css/main.7d7c6a80.css.map",
+    "main.7b38b6e9.js.map": "/burger_club/static/js/main.7b38b6e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9426ae68.css",
-    "static/js/main.f2b2f835.js"
+    "static/css/main.7d7c6a80.css",
+    "static/js/main.7b38b6e9.js"
   ]
 }
