@@ -43,8 +43,10 @@ const ItemWagen = ({ id, imageURL, title, price, count }) => {
           onClick={() => {
             setCountValue2(countValue2 === 0 ? 0 : countValue2 - 1);
             findItem.count = countValue2 - 1;
-            setTotalCountWagen(totalCountWagen - 1);
-            setTotalSummWagen(totalSummWagen - findItem.price);
+            setTotalCountWagen(
+              countValue2 === 0 ? totalCountWagen : totalCountWagen - 1
+            );
+            /* setTotalSummWagen(totalSummWagen - findItem.price); */
           }}
           width="15"
           height="4"
@@ -60,7 +62,7 @@ const ItemWagen = ({ id, imageURL, title, price, count }) => {
             setCountValue2(countValue2 + 1);
             findItem.count = countValue2 + 1;
             setTotalCountWagen(totalCountWagen + 1);
-            setTotalSummWagen(totalSummWagen + findItem.price);
+            /* setTotalSummWagen(totalSummWagen + findItem.price); */
           }}
           width="15"
           height="15"

@@ -110,11 +110,11 @@ const Card = ({ id, imageURL, title, price }) => {
           <h3>{title}</h3>
         </div>
         <div className="menuMain__contentdown">
-          <div className="menuMain__price">from $ {price[0]}</div>
+          <div className="menuMain__price">from $ {price}</div>
           <Link
             to="/single"
             href="##"
-            onClick={() => setCartValue([id, imageURL, title, price[0]])}
+            onClick={() => setCartValue([id, imageURL, title, price])}
             className="btn"
           >
             learn more

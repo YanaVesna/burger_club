@@ -1,13 +1,32 @@
 import React from "react";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
-import { TotalCountWagenContext, LinkContext } from "../App";
+import { Link, useNavigate } from "react-router-dom";
+import { TotalCountWagenContext, LinkContext, SearchContext } from "../App";
+import debounce from "lodash.debounce";
 
 function Header() {
+  const navigate = useNavigate();
+  const goToMenu = () => navigate("/menu");
+  const [value1, setValue1] = React.useState("");
+  const { setSearchValue } = React.useContext(SearchContext);
   const [value, setValue] = React.useState("");
   const [menuValue, setMenuValue] = React.useState("");
   const { totalCountWagen } = React.useContext(TotalCountWagenContext);
   const { setLinkContext } = React.useContext(LinkContext);
+
+  const inputRef = React.useRef();
+
+  const updateSearchValue = React.useCallback(
+    debounce((str) => {
+      setSearchValue(str);
+    }, 250),
+    []
+  );
+
+  const onChangeInput = (event) => {
+    setValue1(event.target.value);
+    updateSearchValue(event.target.value);
+  };
 
   const onClickSearch = () => {
     setValue("active");
@@ -16,6 +35,8 @@ function Header() {
 
   const onClickClose = () => {
     setValue("");
+    setValue1("");
+    setSearchValue("");
   };
 
   const onClickMenu = () => {
@@ -195,7 +216,7 @@ function Header() {
           About
         </Link>
         <span className="space"></span>
-        <Link to="/" onClick={onClickMenuClose}>
+        <Link to="/" onClick={onClickLink1}>
           Reviews
         </Link>
         <Link to="/" onClick={onClickLink5}>
@@ -245,7 +266,15 @@ function Header() {
       <form
         className={value === "active" ? "search-form__active" : "search-form"}
       >
-        <input type="search" name="" placeholder="search here..."></input>
+        <input
+          ref={inputRef}
+          onClick={goToMenu}
+          onChange={onChangeInput}
+          value={value1}
+          type="search"
+          name=""
+          placeholder="search here..."
+        ></input>
       </form>
     </div>
   );

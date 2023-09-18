@@ -1,19 +1,24 @@
 import React from "react";
-import ReactPaginate from "react-paginate";
-import styles from "./Pagination.module.scss";
 
-const Pagination = ({ onChangePage }) => {
+const Pagination = ({ perPage, totalItems, paginate }) => {
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalItems / perPage); i++) {
+    pageNumbers.push(i);
+  }
+
   return (
-    <ReactPaginate
-      className={styles.root}
-      breakLabel="..."
-      nextLabel=">"
-      onPageChange={(event) => onChangePage(event.selected + 1)}
-      pageRangeDisplayed={4} //пицц на странице
-      pageCount={10} //количество страниц
-      previousLabel="< "
-      renderOnZeroPageCount={null}
-    />
+    <>
+      <ul>
+        {pageNumbers.map((number) => (
+          <li key={number}>
+            <a href="##" onClick={() => paginate(number)}>
+              {number}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 

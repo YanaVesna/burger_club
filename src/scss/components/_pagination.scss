@@ -1,0 +1,55 @@
+@import "../_variables.scss";
+
+.pagination {
+  display: flex;
+  height: 31px;
+  width: 500px;
+  align-items: center;
+  padding: 0;
+  gap: 7px;
+  margin-left: 50px;
+
+  .btn {
+    padding: 3px 10px;
+    border-radius: 20%;
+    margin: 0;
+
+    cursor: pointer;
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    height: 31px;
+    gap: 15px;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+
+    a {
+      display: flex;
+      color: $gray;
+      font-weight: 600;
+      width: 25px;
+      height: 25px;
+      border: 3px solid $yellow;
+      margin-right: 10px;
+      font-size: 20px;
+      border-radius: 20%;
+      cursor: pointer;
+      justify-content: center;
+      align-self: center;
+
+      &:hover {
+        background-color: #fe5f1e;
+        color: $white;
+      }
+    }
+  }
+}

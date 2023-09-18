@@ -1,0 +1,66 @@
+@import "../_variables.scss";
+
+.sort__top {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+.sort {
+  position: relative;
+  padding-right: 150px;
+  display: flex;
+  justify-content: flex-end;
+  &__label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    b {
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    span {
+      color: $yellow;
+      border-bottom: 1px dashed $yellow;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

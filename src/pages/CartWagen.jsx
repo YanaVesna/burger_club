@@ -13,7 +13,7 @@ const CartWagen = () => {
 
   const newTotalSumm = () => {
     return arrayWagen.reduce((sum, obj) => {
-      return obj.price * obj.count + sum;
+      return obj.count !== -1 ? obj.price * obj.count + sum : sum;
     }, 0);
   };
 

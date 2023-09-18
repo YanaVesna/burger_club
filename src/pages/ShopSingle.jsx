@@ -106,7 +106,11 @@ const ShopSingle = ({ value }) => {
                     </g>
                   </svg>
                   <svg
-                    onClick={() => setCountValue(countValue - 1)}
+                    onClick={() =>
+                      setCountValue(
+                        countValue === 0 ? countValue : countValue - 1
+                      )
+                    }
                     xmlns="http://www.w3.org/2000/svg"
                     width="17"
                     height="10"

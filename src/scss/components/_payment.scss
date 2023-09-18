@@ -1,10 +1,157 @@
 @import "../_variables.scss";
 
 .payment {
+  background: url("../../../public/img/payment-img.png");
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 95px;
+  height: 860px;
+  background-color: #ebe6e6;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 60%;
+    margin: 170px 40% 170px 60%;
+    background-color: $black;
+    border-radius: 62px;
+    padding: 30px 0;
+  }
+
+  &__registration {
+    display: flex;
+    width: 80%;
+    height: 60px;
+    gap: 20px;
+  }
+
+  &__registration-title {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  &__registration-ort {
+    width: 70%;
+    height: 100%;
+    border-radius: 51px;
+    background-color: $white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+    padding-left: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    height: 70px;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons-register,
+  &__buttons-login {
+    display: flex;
+    width: 48%;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 45px;
+    gap: 20px;
+    justify-content: flex-end;
+    color: $white;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  &__buttons-register {
+    background: #1f77a8;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__buttons-login {
+    background: #6eb1d8;
+  }
+
+  &__buttons-title {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .payment {
+    &__registration-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &__buttons {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .payment {
+    &__content {
+      justify-content: space-between;
+    }
+
+    &__registration {
+      display: block;
+      height: 40px;
+    }
+
+    &__registration-title {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &__buttons {
+      display: flex;
+      height: 50px;
+    }
+
+    &__buttons-register {
+      width: 45%;
+    }
+
+    &__buttons-login {
+      width: 45%;
+    }
+
+    &__registration-ort {
+      width: 100%;
+    }
+
+    &__buttons-register,
+    &__buttons-login {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .payment {
+    &__content {
+      margin: 170px 0;
+      width: 80%;
+    }
+
+    &__buttons {
+      width: 70%;
+    }
+
+    &__registration-title {
+      color: $white;
+    }
+  }
 }

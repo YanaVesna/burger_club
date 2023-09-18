@@ -14,8 +14,6 @@ const Home = () => {
   const { categoryValue, setCategoryValue } = React.useContext(CategoryContext);
   const { linkContext } = React.useContext(LinkContext);
 
-  console.log(linkContext);
-
   const inputElement1 = useRef();
   const inputElement2 = useRef();
   const inputElement3 = useRef();
@@ -38,7 +36,6 @@ const Home = () => {
         behavior: "smooth",
       });
     } else if (linkContext === 4) {
-      console.log(55);
       inputElement4.current?.scrollIntoView({
         behavior: "smooth",
       });
@@ -55,13 +52,15 @@ const Home = () => {
         behavior: "smooth",
       });
     } else {
-      console.log(111);
+      inputElement1.current?.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 
   useEffect(() => {
     scrollToElement();
-  }, []);
+  }, [linkContext]);
 
   return (
     <>
@@ -571,7 +570,7 @@ const Home = () => {
                 impedit, consequatur perspiciatis facilis, aliquid, placeat
                 vero.
               </p>
-              <Link to="/payment" href="##" className="btn">
+              <Link to="/notfound" href="##" className="btn">
                 read more
               </Link>
             </div>
@@ -622,7 +621,7 @@ const Home = () => {
                 impedit, consequatur perspiciatis facilis, aliquid, placeat
                 vero.
               </p>
-              <Link to="/payment" href="##" className="btn">
+              <Link to="/notfound" href="##" className="btn">
                 read more
               </Link>
             </div>
@@ -674,7 +673,7 @@ const Home = () => {
                 vero.
               </p>
 
-              <Link to="/payment" href="##" className="btn">
+              <Link to="/notfound" href="##" className="btn">
                 read more
               </Link>
             </div>
